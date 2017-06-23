@@ -55,3 +55,12 @@ function askForANumber (guessedNum, randomNumber) {
     startNewGameButton()
   }
 }
+
+//change background color
+document.querySelector('h5').addEventListener('click', function () {
+  document.querySelector('body').style.backgroundColor = 'rgb('+randomz()+',' + randomz() +','+randomz()+')'
+})
+
+function randomz () {
+  return Math.floor(Math.random() * 255)
+}
